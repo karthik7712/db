@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search & Manage Doctors/Patients</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Search and Manage Doctors/Patients</h1>
+
+    <!-- Search Form -->
+    <form id="searchForm">
+        <label for="searchName">Search Name:</label>
+        <input type="text" id="searchName" name="name" placeholder="Enter name to search" required>
+        
+        <label for="searchType">Search Type:</label>
+        <select id="searchType" name="type" required>
+            <option value="doctor">Doctor</option>
+            <option value="patient">Patient</option>
+        </select>
+        
+        <button type="submit">Search</button>
+    </form>
+
+    <div id="searchResults"></div>
+
+    <!-- Add Doctor Form -->
+    <h2>Add Doctor</h2>
+    <form id="addDoctorForm">
+        <input type="text" id="doctorName" placeholder="Name" required>
+        <input type="text" id="specialization" placeholder="Specialization" required>
+        <input type="text" id="phone" placeholder="Phone Number" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="availability" placeholder="Availability" required>
+        <button type="submit">Add Doctor</button>
+    </form>
+
+    <!-- Add Patient Form -->
+    <h2>Add Patient</h2>
+    <form id="addPatientForm">
+        <input type="text" id="patientName" placeholder="Name" required>
+        <input type="number" id="age" placeholder="Age" required>
+        <input type="text" id="address" placeholder="Address" required>
+        <input type="text" id="phoneNumber" placeholder="Phone Number" required>
+        <input type="number" id="doctorId" placeholder="Doctor ID" required>
+        <button type="submit">Add Patient</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
